@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import New from './new.jsx'
+// import New from './new.jsx'
 
 function MyApp(){
   return (
@@ -29,8 +29,5 @@ const Element = React.createElement(
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
     Element
-  
-
 )
