@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import CompA from './Components/CompA'
+import InputFocus from './Components/UseRef'
+
 // import { ThemeProvider } from './ThemeContext';
 // import ThemeButton from './ThemeButton';
 
@@ -35,6 +37,8 @@ function App() {
     <>
     <h1 class='text-center text-3xl font-serif'>Hello, Sarthak</h1>
     <CompA/>
+    <InputFocus/>
+
     </>
   )
 }
