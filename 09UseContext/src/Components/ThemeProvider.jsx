@@ -7,6 +7,12 @@ export const ThemeContext = createContext({
 
 });
 
+export const ThemeProvider = ThemeContext.Provider
+
+export function useTheme(){
+  return useContext(ThemeProvider)
+}
+
 // export function ThemeProvider({ children }) {
 //   const [theme, setTheme] = useState('light');
 
@@ -20,9 +26,3 @@ export const ThemeContext = createContext({
 //     </ThemeContext.Provider>
 //   );
 // }
-
-export const ThemeProvider = ThemeContext.Provider
-
-export function useTheme(){
-  return useContext(ThemeProvider)
-}

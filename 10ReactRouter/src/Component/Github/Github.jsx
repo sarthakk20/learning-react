@@ -18,7 +18,7 @@ function Github() {
         className='h-136 w-full flex items-center'>
             <div className='text-center bg-orange-800 w-full text-white text-2xl '>
                 <div>
-                <img src="https://avatars.githubusercontent.com/u/165361407?v=4" alt="ProfilePhoto" className='rounded-full p-4 inline-block'/>
+                <img src={data.avatar_url} alt="ProfilePhoto" className='rounded-full p-4 inline-block'/>
                 <div className='m-3'>
                     Github Username : {data.login}
                     {/* <br /> */}

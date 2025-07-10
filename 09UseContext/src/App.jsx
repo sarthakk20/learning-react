@@ -54,11 +54,14 @@ function App() {
   return (
     <ThemeProvider value={{themeMode, darkMode, lightMode}}>
     <h1 class='text-center text-3xl font-serif'>Hello, Sarthak</h1>
-    {/* <CompA/>
+    <CompA/>
     <InputFocus/>
-    <StopWatch/> */}
-    <ThemeButton/>
-    <Card/>
+    <StopWatch/>
+    <div className='bg-gray-700 m-3'>
+      <ThemeButton/>
+      <Card/>       
+      
+    </div>
     </ThemeProvider>
   )
 }

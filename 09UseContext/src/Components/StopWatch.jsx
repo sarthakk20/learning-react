@@ -6,7 +6,7 @@ export default function StopWatch(){
     const [elapsedTime , setElapsedTime] = useState(0)
 
     const intervalRef = useRef(null)
-    const startTimeRef = useRef(0)
+    const startTimeRef = useRef(0)  //this gives the reference from the time we started
 
     
     useEffect(()=>{
@@ -15,7 +15,7 @@ export default function StopWatch(){
             // console.log(elapsedTime);
             
             intervalRef.current = setInterval(() => {
-                setElapsedTime(Date.now()-startTimeRef.current)
+                setElapsedTime(Date.now()-startTimeRef.current) //this stores the value from the current time(Date.now()) - the time we started the stopwatch(startTimeRef)
                 // console.log(startTimeRef.current);
                 // console.log(Date.now());
                 
